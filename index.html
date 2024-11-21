@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey Board</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">
+      <span class="deep">Deep</span> <span class="thought">Thought</span>
+    </h1>
+    <div class="icons">
+      <div class="add-icon">
+        <i class="fa-solid fa-house-chimney"></i>
+      </div>
+      <div class="add-icon">
+        <i class="fa-solid fa-bell"></i>
+      </div>
+      <div class="add-icon">
+        <i class="fa-solid fa-gear"></i>
+      </div>
+      <div class="add-icon">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="journey-board" class="collapsed">
+
+      <!-- Sidebar toggle button -->
+      <div id="leftsec">
+        <button id="toggle-btn" class="toggle-btn">
+          <i class="fa-solid fa-arrow-right"></i> <!-- Use right arrow icon -->
+        </button>
+        <div id="sidebar" class="sidebar">
+          <h3>Journey Board</h3>
+          <ul>
+            <li>Explore the world of management</li>
+            <li>Threads & Project Management</li>
+            <li>Frameworks & Systems</li>
+            <li>Q&A Sessions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="rightsec">
+        <section class="intermediate">
+          <h2>Technical Project Management</h2>
+          <p>Explore the world of management and learn how to manage each step of a project.</p>
+          <button class="btn-primary">Submit Task</button>
+        </section>
+        <!-- Main Content Area -->
+        <section class="content">
+          <div class="card">
+            <h3 class="card-title">Technical Project Management</h3>
+            <p class="card-description"><b>Description:</b>Story of Alignment Scope of Agility Specific Accountable Staggering Approch</p>
+            <iframe src="https://www.youtube.com/embed/video-id" title="Video"></iframe>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Thread Build</h3>
+            <p class="card-description"><b>Description:</b> Watch the video and thread build, and jot out key threads while watching that video.</p>
+            
+            <!-- Additional Elements -->
+            <h4 class="thread-heading">Thread A</h4>
+            <div class="input-group">
+              <div class="input-item">
+                <label for="sub-thread-1">Sub Thread 1:</label>
+                <input type="text" id="sub-thread-1" name="sub-thread-1" placeholder="Enter sub-thread">
+              </div>
+              <div class="input-item">
+                <label for="sub-interpretation-1">Sub Interpretation 1:</label>
+                <input type="text" id="sub-interpretation-1" name="sub-interpretation-1" placeholder="Enter interpretation">
+              </div>
+            </div>
+          
+            <!-- Icons -->
+            <div class="icon-group">
+              <i class="fa-solid fa-lightbulb"></i>
+              <i class="fa-solid fa-comment"></i>
+              <i class="fa-solid fa-question"></i>
+            </div>
+          
+            <!-- Buttons and Additional Textbox -->
+            <button class="btn add-thread-btn">+ Sub Thread</button>
+            <div class="summary-section">
+              <label for="summary-thread-a">Summary for Thread A:</label>
+              <textarea id="summary-thread-a" placeholder="Enter summary"></textarea>
+            </div>
+          </div>
+          
+          <div class="card">
+            <h3 class="card-title">Structure Your Process</h3>
+            <p class="card-description">
+              <b>Description:</b> Write a 400-500 word article, from your thread. Publish your understanding and showcase your learning.
+            </p>
+          
+            <!-- Updated Section with Two Textboxes -->
+            <div class="input-group">
+              <!-- Title Textbox -->
+              <div class="input-item">
+                <label for="title-textbox">Title:</label>
+                <input type="text" id="title-textbox" placeholder="Enter title">
+              </div>
+          
+              <!-- Content Textbox -->
+              <div class="input-item">
+                <label for="content-textbox">Content:</label>
+                <div class="content-box">
+                  <!-- Options Bar -->
+                  <div class="options-bar">
+                    <span>File</span>
+                    <span>Edit</span>
+                    <span>View</span>
+                    <span>Insert</span>
+                    <span>Format</span>
+                    <span>Help</span>
+                  </div>
+                  <!-- Textarea for Content -->
+                  <textarea id="content-textbox" placeholder="Enter content"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>          
+          
+          <div class="card">
+            <h3 class="card-title">4SA Method</h3>
+            <p class="card-description"><b>Description:</b> To explore more, read more</p>
+            
+            <!-- New Container -->
+            <div class="additional-container">
+              <!-- Introduction Section -->
+              <h4 class="section-heading">Introduction</h4>
+              <p class="section-content">The 4S4 method, how to bring an idea into process? 
+                <a href="#" class="see-more">See More</a>
+              </p>
+              
+              <!-- Thread A Section -->
+              <h4 class="section-heading">Thread A</h4>
+              <p class="section-content">How are you going to develop your stratergy? Which method are you going to use?
+                <a href="#" class="see-more">See More</a>
+              </p>
+              
+              <!-- Example Section -->
+              <div class="example-box">Example 1</div>
+              <p class="example-description">This example illustrates the core concepts and provides practical insights.</p>
+            </div>
+          </div>
+          
+        </section>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <button class="help-btn">?</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
